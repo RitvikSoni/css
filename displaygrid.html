@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-gap: 2rem;
+            /* grid-template-columns: 1fr 2fr 2fr; */
+            grid-template-columns: repeat(4,auto);
+
+
+        }
+        .box{
+            border: 2px solid black;
+            /* height: 200px;
+            width: 200px; */
+            background-color: yellow;
+        }
+        #inner-box{
+        
+            height: 100%;
+            border: 2px solid black;
+            background-color: black;
+        }
+        #inner-box2{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="inner-box2"></div>
+        <div class="inner-box"></div>
+       <div class="inner-box"></div>
+    </div>
+  
+</body>
+</html>
